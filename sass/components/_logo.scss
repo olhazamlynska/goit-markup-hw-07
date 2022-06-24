@@ -1,0 +1,28 @@
+.logo {
+  margin-right: 93px;
+}
+
+.logo__link {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+.logo__text {
+  color: var(--header-logo-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+.logo__link:hover,
+.logo__link:focus,
+.logo__text:hover,
+.logo__text:focus {
+  color: var(--accent);
+}
+.logo__text--footer {
+  color: var(--footer-logo-color);
+  margin-bottom: 20px;
+}

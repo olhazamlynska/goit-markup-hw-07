@@ -19,7 +19,7 @@
   transform: translate(-90%, 90%) scale(0) rotate(-360deg);
   opacity: 0.2;
 }
-.modal-btn {
+.modal__btn {
   width: 30px;
   height: 30px;
   background: transparent;
@@ -34,28 +34,28 @@
   padding: 0;
   cursor: pointer;
 }
-.icon-close {
+.icon__close {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-btn:hover .icon-close,
-.modal-btn:focus .icon-close {
+.modal__btn:hover .icon__close,
+.modal__btn:focus .icon__close {
   fill: var(--accent);
 }
-.modal-title {
+.modal__title {
   font-style: normal;
   font-size: 20px;
   line-height: calc(23 / 20);
   margin-bottom: 12px;
 }
 
-.modal-field {
+.modal__field {
   margin-bottom: 10px;
 }
 
-.modal-name,
-.modal-tel,
-.modal-mail {
+.modal__name,
+.modal__tel,
+.modal__mail {
   width: 100%;
   height: 40px;
   font-size: 14px;
@@ -69,18 +69,18 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-name:focus,
-.modal-name:hover,
-.modal-tel:focus,
-.modal-tel:hover,
-.modal-mail:focus,
-.modal-mail:hover {
+.modal__name:focus,
+.modal__name:hover,
+.modal__tel:focus,
+.modal__tel:hover,
+.modal__mail:focus,
+.modal__mail:hover {
   border: 1px solid var(--accent);
 }
 
-.label-name,
-.label-tel,
-.label-mail {
+.label__name,
+.label__tel,
+.label__mail {
   display: block;
   margin-bottom: 4px;
   font-style: normal;
@@ -89,11 +89,11 @@
   letter-spacing: 0.01em;
 }
 
-.name-field {
+.name__field {
   position: relative;
 }
 
-.icon-person {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 11px;
@@ -101,22 +101,22 @@
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.tel-field {
+.tel__field {
   position: relative;
 }
 
-.icon-modalphone {
+.modal__icon{
   position: absolute;
   top: 50%;
   left: 11px;
   transform: translateY(-50%);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-.mail-field {
+.mail__field {
   position: relative;
 }
 
-.icon-modalemail {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 11px;
@@ -124,20 +124,20 @@
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-name:focus + .icon-person,
-.modal-name:hover + .icon-person,
-.modal-tel:focus + .icon-modalphone,
-.modal-tel:hover + .icon-modalphone,
-.modal-mail:focus + .icon-modalphone,
-.modal-mail:hover + .icon-modalphone {
+.modal__name:focus + .modal__icon,
+.modal__name:hover + .modal__icon,
+.modal__tel:focus + .modal__icon,
+.modal__tel:hover + .modal__icon,
+.modal__mail:focus + .modal__icon,
+.modal__mail:hover + .modal__icon {
   fill: var(--accent);
 }
-.modal-text {
+.modal__text {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.label-text {
+.label__text {
   width: 100%;
   font-style: normal;
   font-size: 12px;
@@ -145,7 +145,7 @@
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
-.area-text {
+.area__text {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -159,28 +159,28 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.area-text:hover,
-.area-text:focus {
+.area__text:hover,
+.area__text:focus {
   border: 1px solid #2196f3;
 }
-.checkbox-field {
+.checkbox__field {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 30px;
 }
-.check-input {
+.check__input {
   position: absolute;
   top: 0;
   left: 0;
 }
-.check-text {
+.check__text {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
-.checkbox-span {
+.checkbox__span {
   width: 16px;
   height: 15px;
   position: relative;
@@ -196,7 +196,7 @@
     border var(--transition-duration) var(--transition-timing-function);
 }
 
-.check-icon {
+.check__icon {
   width: 100%;
   height: 100%;
   fill: transparent;
@@ -206,26 +206,26 @@
   transform: translate(-50%, -50%);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-.check-input:focus + .check-text span,
-.check-input:hover + .check-text span {
+.check__input:focus + .check__text span,
+.check__input:hover + .check__text span {
   border-color: var(--accent);
 }
 
-.check-input:checked + .check-text span {
+.check__input:checked + .check__text span {
   background-color: var(--accent);
   border: none;
 }
-.check-input:checked + .check-text .check-icon {
+.check__input:checked + .check__text .check__icon {
   fill: #ffffff;
 }
 
-.checkbox-link {
+.checkbox__link {
   display: inline;
   margin-left: 1px;
   color: var(--accent);
   border-bottom: 1px solid var(--accent);
 }
-.send-btn {
+.send__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,7 +245,7 @@
     var(--transition-timing-function);
 }
 
-.send-btn:hover,
-.send-btn:focus {
+.send__btn:hover,
+.send__btn:focus {
   background-color: var(--hero-btn-color);
 }

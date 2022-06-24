@@ -12,14 +12,11 @@
 }
 .works-btn {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-
+  text-align: center;
   padding: 6px 22px;
-  border-radius: 4px;
-  border: transparent;
+
   color: var(--second-tittle-color);
   background-color: var(--second-btn-color);
   transition: color var(--transition-duration) var(--transition-timing-function),

@@ -10,7 +10,7 @@
   max-width: 1600px;
   margin: 0 auto;
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -25,26 +25,21 @@
 
   color: var(--main-tittle-color);
 }
-.hero-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
+.hero__btn {
   display: block;
+
   min-width: 200px;
   height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto;
-  border: transparent;
-  border-radius: 4px;
-  color: #ffffff;
+
+  color: var(--text-btn-color);
   background-color: var(--main-btn-color);
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--hero-btn-color);
 }

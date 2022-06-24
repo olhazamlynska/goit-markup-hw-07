@@ -3,22 +3,18 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.adress {
+.contacts {
   margin-right: 70px;
 }
 
-.logo-footer {
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.footer-address {
+.address {
   margin-top: 20px;
 }
-.footer-item {
+.address__item {
   font-family: inherit;
   font-style: normal;
   font-size: 14px;
@@ -27,27 +23,25 @@
 
   margin-bottom: 9px;
 }
-.footer-link {
+.address__link {
   color: #ffffff;
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.footer-contacts {
+.address__contacts {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.footer-link:hover,
-.footer-link:focus,
-.footer-contacts:hover,
-.footer-contacts:focus {
+.address__link:hover,
+.address__link:focus,
+.address__contacts:hover,
+.address__contacts:focus {
   color: var(--accent);
 }
 .social {
   margin-right: 93px;
 }
-.social-title {
-  font-family: 'Roboto';
-  font-style: normal;
+.social__title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -56,13 +50,13 @@
   margin-bottom: 20px;
   color: var(--main-tittle-color);
 }
-.social-list {
+.social__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-item {
+.social__item {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   width: 44px;
@@ -72,11 +66,11 @@
   justify-content: center;
   align-items: center;
 }
-.social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: var(--min-margin);
 }
 
-.social-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,29 +81,18 @@
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
 }
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent);
 }
-
-.icon-instagram {
+.social__icon {
   fill: currentColor;
 }
-.icon-twitter {
-  fill: currentColor;
-}
-.icon-facebook {
-  fill: currentColor;
-}
-.icon-linkedin {
-  fill: currentColor;
-}
-.fotter-form {
+.form-container{
   margin-right: auto;
 }
-.footer-title {
-  font-family: 'Roboto';
-  font-style: normal;
+.form-container__title {
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -118,11 +101,10 @@
   margin-bottom: 20px;
   color: var(--main-tittle-color);
 }
-
-.footer-mail-form {
+.mail-form {
   display: flex;
 }
-.footer-input {
+.mail-form__input {
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -135,38 +117,32 @@
   transition: border var(--transition-duration)
     var(--transition-timing-function);
 }
-.footer-input:focus,
-.footer-input:hover {
+.mail-form__input:focus,
+.mail-form__input:hover {
   border: 1px solid var(--accent);
 }
 
-.footer-btn {
+.mail-form__btn {
   position: relative;
   display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
-  background-color: var(--main-btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
+
   padding-left: 29px;
-  color: #ffffff;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-btn-color);
+  background-color: var(--main-btn-color);
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
 }
-
-.footer-btn:hover,
-.footer-btn:focus {
+.mail-form__btn:hover,
+.mail-form__btn:focus {
   background-color: var(--hero-btn-color);
 }
-
-.icon-send {
+.mail-form__icon {
   position: absolute;
   right: 28px;
   margin-left: 10px;
-
 }
