@@ -10,12 +10,10 @@
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+    @include display(flex, center);
 }
 .nav__list {
-  display: flex;
-  align-items: center;
+    @include display(flex, center);
   margin-left: auto;
 }
 .nav__item:not(:first-child) {
@@ -24,10 +22,7 @@
 
 .nav__link {
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 500, 1.14, 0.02em);
   color: var(--second-tittle-color);
 
   transition: color var(--transition-duration) var(--transition-timing-function);
@@ -53,10 +48,7 @@
 }
 
 .nav__address {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 500, 1.14, 0.02em);
   color: var(--main-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
   &:hover,

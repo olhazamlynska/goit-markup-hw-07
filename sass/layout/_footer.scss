@@ -3,8 +3,7 @@
   padding-bottom: 60px;
   background-color: #2f303a;
   &__container {
-    display: flex;
-    align-items: baseline;
+    @include display(flex, baseline);
   }
 }
 .contacts {
@@ -17,10 +16,7 @@
   &__item {
     font-family: inherit;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
+    @include font(14px, null, 1.71, 0.03em);
     margin-bottom: 9px;
   }
   &__link {
@@ -45,23 +41,18 @@
   margin-right: 93px;
 
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--main-tittle-color);
   }
   &__list {
-    display: flex;
-    align-items: center;
+    @include display(flex, center);
     justify-content: center;
   }
 
   &__item {
-    display: flex;
-    align-items: center;
+    @include display(flex, center);
     justify-content: center;
     width: 44px;
     height: 44px;
@@ -75,9 +66,8 @@
   }
 
   &__link {
-    display: flex;
+    @include display(flex, center);
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -98,10 +88,7 @@
 .form-container {
   margin-right: auto;
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--main-tittle-color);
@@ -115,7 +102,7 @@
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    @include bordered(rgba(255, 255, 255, 0.3));
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
@@ -130,8 +117,7 @@
 
 .mail-form__btn {
   position: relative;
-  display: flex;
-  align-items: center;
+  @include display(flex, center);
   width: 200px;
   height: 50px;
 

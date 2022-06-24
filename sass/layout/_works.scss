@@ -12,9 +12,7 @@
 }
 
 .works__btn {
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(16px, 500, 1.62, 0.03em);
   text-align: center;
   padding: 6px 22px;
 
@@ -69,11 +67,9 @@
   &__top-text {
     position: absolute;
     top: 0;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    padding: 63px 24px;
     height: 100%;
+    @include font(18px, null, 1.56, 0.03em);
+    padding: 63px 24px;
     color: #ffffff;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
@@ -85,19 +81,15 @@
     }
   }
 
- &__info {
+  &__info {
     padding: 20px 24px;
   }
   &__subtittle {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(18px, null, 2, 0.06em);
     color: var(--second-tittle-color);
   }
   &__text {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
+    @include font(16px, null, 1.88, 0.03em);
     color: var(--main-text-color);
   }
 }

@@ -3,11 +3,7 @@
 
   &__link {
     font-family: var(--second-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
+@include font(26px, 700, 1.19, 0.03em);
     color: var(--accent);
     transition: color var(--transition-duration)
       var(--transition-timing-function);

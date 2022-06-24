@@ -26,19 +26,14 @@
     padding-bottom: 30px;
   }
   &__subtittle {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(16px, 500, 1.19, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: var(--min-margin);
     color: var(--second-tittle-color);
   }
   &__text {
-    font-size: 16px;
-    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
+    @include font(16px, null, 1.19, 0.03em);
     color: var(--main-text-color);
   }
 }
