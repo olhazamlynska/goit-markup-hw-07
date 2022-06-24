@@ -1,45 +1,41 @@
 .hero {
-  background-color: #2f303a;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/herobg.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  margin: 0 auto;
+  background-color: #2f303a;
+  &__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: var(--average-margin);
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--main-tittle-color);
+  }
 }
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 
-  margin-bottom: var(--average-margin);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 696px;
-
-  color: var(--main-tittle-color);
-}
 .hero__btn {
   display: block;
-
   min-width: 200px;
   height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto;
-
-  color: var(--text-btn-color);
   background-color: var(--main-btn-color);
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
-}
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: var(--hero-btn-color);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-color);
+  }
 }

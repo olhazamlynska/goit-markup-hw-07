@@ -1,20 +1,21 @@
 .soc__list {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
 }
 .soc__item {
-  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.soc__item:not(:last-child) {
-  margin-right: var(--min-margin);
+  color: #afb1b8;
+
+  &:not(:last-child) {
+    margin-right: var(--min-margin);
+  }
 }
 
 .soc__link {
@@ -28,11 +29,11 @@
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
       var(--transition-timing-function);
-}
-.soc__link:hover,
-.soc__link:focus {
-  color: #ffffff;
-  background-color: var(--accent);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent);
+  }
 }
 
 .soc__icon {
