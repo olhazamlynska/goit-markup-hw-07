@@ -1,0 +1,60 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-tittle {
+  margin-bottom: var(--max-margin);
+}
+
+.clients-list {
+  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item {
+  color: #afb1b8;
+  width: calc(100% / 6 - 30px);
+  height: 92px;
+  margin-left: var(--average-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link {
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border var(--transition-duration) var(--transition-timing-function);
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.clients-icon-Fgroup {
+  fill: currentColor;
+}
+.clients-icon-Sgroup {
+  fill: currentColor;
+}
+.clients-icon-Tgroup {
+  fill: currentColor;
+}
+.clients-icon-Fogroup {
+  fill: currentColor;
+}
+.clients-icon-Figroup {
+  fill: currentColor;
+}
+.clients-icon-Sigroup {
+  fill: currentColor;
+}
